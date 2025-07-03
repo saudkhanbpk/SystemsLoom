@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: martechnexus
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build && npm run db:push
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false  # You'll need to set this manually in Render dashboard
+
+databases:
+  - name: martechnexus-db
+    databaseName: martechnexus
+    user: martechnexus

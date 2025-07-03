@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS for frontend running on different port
 app.use(cors({
-  origin: process.env.NODE_ENV === "development" ? "http://localhost:3000" : false,
+  origin: process.env.NODE_ENV === "development" ? "http://localhost:3000" : true,
   credentials: true
 }));
 
@@ -64,11 +64,11 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // ALWAYS serve the app on port 5000
-  // this serves both the API and the client.
-  // It is the only port that is not firewalled.
-  const port = 5000;
-  server.listen(port, "localhost", () => {
-    log(`serving on port ${port}`);
+  // Use PORT environment variable for production (Render) or default to 5000 for development
+  const port = process.env.PORT ? parseInt(process.env.PORT) : 5000;
+  const host = process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost";
+
+  server.listen(port, host, () => {
+    log(`serving on ${host}:${port}`);
   });
 })();
