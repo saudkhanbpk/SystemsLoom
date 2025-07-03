@@ -251,7 +251,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold text-dark-slate">Email</div>
-                      <div className="text-light-slate">TechConsults@gmail.com</div>
+                      <div className="text-light-slate">contact@techcreator.co</div>
                     </div>
                   </div>
 
@@ -261,7 +261,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold text-dark-slate">Phone</div>
-                      <div className="text-light-slate">+13213646803</div>
+                      <div className="text-light-slate">03119265290</div>
                     </div>
                   </div>
 
