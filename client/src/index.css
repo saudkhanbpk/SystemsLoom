@@ -25,8 +25,7 @@
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(222, 84%, 4.9%);
   --radius: 0.5rem;
-  
-  /* Custom MarTechify colors */
+
   --tech-blue: hsl(221, 91%, 54%);
   --marketing-red: hsl(0, 84%, 60%);
   --accent-purple: hsl(247, 84%, 67%);
