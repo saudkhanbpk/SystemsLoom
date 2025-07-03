@@ -261,7 +261,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold text-dark-slate">Phone</div>
-                      <div className="text-light-slate">+1 (555) 123-4567</div>
+                      <div className="text-light-slate">+13213646803</div>
                     </div>
                   </div>
 

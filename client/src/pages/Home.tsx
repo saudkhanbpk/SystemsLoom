@@ -20,15 +20,16 @@ export default function Home() {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+  backgroundImage: `url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  filter: 'brightness(0.6)', 
+}}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-dark-slate/90 via-dark-slate/70 to-transparent"></div>
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8  ">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Where{" "}
@@ -37,7 +38,7 @@ export default function Home() {
               <span className="text-marketing-red">Marketing</span>{" "}
               Excellence
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">
               We blend cutting-edge technology with strategic marketing to deliver 
               comprehensive digital solutions that drive your business forward.
             </p>
@@ -51,14 +52,14 @@ export default function Home() {
                   Start Your Project
                 </Button>
               </Link>
-              <Button 
+              {/* <Button 
                 variant="outline"
                 size="lg"
                 className="border-2 border-white text-white hover:bg-white hover:text-dark-slate transition-all text-lg px-8 py-6"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Watch Our Story
-              </Button>
+              </Button>  */}
             </div>
           </div>
         </div>
