@@ -272,8 +272,9 @@ export default function Contact() {
                     <div>
                       <div className="font-semibold text-dark-slate">Office</div>
                       <div className="text-light-slate">
-                        123 Tech Street<br />
-                        Innovation City, IC 12345
+                      Mardan road Near Muneer Hospital, <br />
+                      Swabi, Swabi, Pakistan
+                        
                       </div>
                     </div>
                   </div>
