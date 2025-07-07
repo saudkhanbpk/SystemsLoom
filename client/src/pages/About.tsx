@@ -3,8 +3,23 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Users, Target, Award, Clock } from "lucide-react";
 import ceoImage from "@/assets/ceo.jpeg";
-import cmo1 from "@/assets/cmo1.webp";
+import aamirbhai2 from "@/assets/aamirbhai2.png";
+import abbas1 from "@/assets/abbas1.jpg";
 import techcreator from "../assets/techcreator.jpg";
+import hamdan2 from "../assets/hamdan2.jpg";
+import amir1 from "../assets/amir1.jpg";
+import irtizaz from "../assets/irtizaz.jpg";
+import luqman from "../assets/luqman.jpg";
+import naem from "../assets/naem.jpg";
+import ishtiaq from "../assets/ishtiaq.jpg";
+import afaq from "../assets/afaq.jpg";
+import imam from "../assets/imamhussain.jpg";
+import waheed2 from "../assets/waheed2.jpg";
+import zaid from "../assets/zaid.jpg";
+import adil from "../assets/adil.jpg";
+import zeeshan from "../assets/zeeshan.jpg";
+import OurProjects from "@/components/aboutus/OurProjects";
+
 export default function About() {
   return (
     <div className="pt-16">
@@ -24,7 +39,7 @@ export default function About() {
       </section>
 
       {/* Main Content */}
-      <section className="md:py-20 bg-white">
+      <section className=" bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center md:mb-20">
             <div>
@@ -62,13 +77,17 @@ export default function About() {
                 alt="Our diverse team collaborating"
                 className="rounded-2xl shadow-2xl w-full"
               /> */}
-              <img  className="rounded-2xl shadow-2xl md:object-cover object-contain md:w-[500px] md:h-[400px] " src={techcreator} alt="" />
+              <img
+                className="rounded-2xl shadow-2xl md:object-cover object-contain md:w-[500px] md:h-[400px] "
+                src={techcreator}
+                alt=""
+              />
             </div>
           </div>
 
           {/* Stats */}
           <div className="grid md:grid-cols-4 gap-8 md:mb-20">
-            <Card className="group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50/50 overflow-hidden relative">
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50/50 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/5 to-tech-blue/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8 relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-tech-blue to-tech-blue/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -84,13 +103,13 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-red-50/50 overflow-hidden relative">
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-red-50/50 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-marketing-red/5 to-marketing-red/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8 relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-marketing-red to-marketing-red/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <Users className="h-10 w-10 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-marketing-red mb-3 group-hover:scale-105 transition-transform duration-300">
+                <div className="text-4xl font-bold text-tech-blue mb-3 group-hover:scale-105 transition-transform duration-300">
                   30+
                 </div>
                 <div className="text-light-slate font-medium">
@@ -100,7 +119,7 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50/50 overflow-hidden relative">
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50/50 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-purple/5 to-accent-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8 relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-accent-purple to-accent-purple/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -116,13 +135,13 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-green-50/50 overflow-hidden relative">
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-green-50/50 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-success-green/5 to-success-green/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8 relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-success-green to-success-green/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <Clock className="h-10 w-10 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-success-green mb-3 group-hover:scale-105 transition-transform duration-300">
+                <div className="text-4xl font-bold text-tech-blue mb-3 group-hover:scale-105 transition-transform duration-300">
                   24/7
                 </div>
                 <div className="text-light-slate font-medium">
@@ -144,80 +163,283 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-20 max-w-4xl mx-auto">
-            <Card className="group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-20 max-w-7xl mx-auto">
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80 overflow-hidden">
                   <img
                     src={ceoImage}
-                    alt="Saud Khan - CEO & Co-Founder"
-                    className=" object-center transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    {/* <div className="w-3 h-3 bg-success-green rounded-full animate-pulse shadow-lg"></div> */}
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">Saud Khan</h3>
-                    <p className="text-yellow-300 font-semibold mb-3">
-                      CTO Co Founder
-                    </p>
-                    <p className="text-sm text-gray-200 leading-relaxed">
-                      Access Top AI Engineers & Full Stack Developers MERN, MEAN
-                      & AI Tools OpenAI, LangChain, Replicate.
-                    </p>
-                  </div>
                 </div>
-                {/* <div className="p-6 bg-gradient-to-r from-tech-blue/5 to-transparent">
-                  <div className="flex items-center justify-between">
-                    <div className="text-left">
-                      <div className="text-xs text-light-slate">Experience</div>
-                      <div className="text-lg font-bold text-tech-blue">
-                        10+ Years
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Saud Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    CTO Co Founder
+                  </p>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80 overflow-hidden">
                   <img
-                    src={cmo1}
-                    alt="Saud Khan - CEO & Co-Founder"
-                    className=" object-center transition-transform duration-300 group-hover:scale-105"
+                    src={aamirbhai2}
+                    className="w-full h-full  object-center transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    {/* <div className="w-3 h-3 bg-success-green rounded-full animate-pulse shadow-lg"></div> */}
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">Aamir Ali</h3>
-                    <p className="text-yellow-300 font-semibold mb-3">
-                      CMO Co Founder
-                    </p>
-                    <p className="text-sm text-gray-200 leading-relaxed">
-                      Visionary, Strategic, Creative, Analytical, Collaborative,
-                      Leader
-                    </p>
-                  </div>
                 </div>
-                {/* <div className="p-6 bg-gradient-to-r from-tech-blue/5 to-transparent">
-                  <div className="flex  ">
-                    <div className="text-left ">
-                      <div className="text-xs text-light-slate">Experience</div>
-                      <div className="text-lg font-bold text-tech-blue">
-                        5+ Years
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Aamir Ali
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    CMO Co Founder
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={abbas1}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Abbas Khan
+                  </h3>
+                  <p className="text-accent-purple font-semibold mb-3">
+                    HubSpot Specialist
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={hamdan2}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Hamdan Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    Project Manager
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={amir1}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Aamir Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    SEO & Project Manager
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={irtizaz}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Ihtizaz
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    Angular Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={luqman}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Luqman Khan
+                  </h3>
+                  <p className="text-accent-purple font-semibold mb-3">
+                    Angular Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={naem}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Naeem Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    MERN Stack Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={ishtiaq}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Ishtiaq Ali
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    MERN Stack Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={afaq}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Afaq Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    MERN Stack Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={imam}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Imam Hussain
+                  </h3>
+                  <p className="text-accent-purple font-semibold mb-3">
+                    MERN Stack Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={zaid}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    M Zaid
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    MERN Stack Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={adil}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Adil Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    MERN Stack Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={waheed2}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Waheed Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    App Developer
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={zeeshan}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2 text-dark-slate">
+                    Zeeshan Khan
+                  </h3>
+                  <p className="text-tech-blue font-semibold mb-3">
+                    App Developer
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
+      </section>
+      <section>
+        <OurProjects/>
       </section>
 
       {/* Values Section */}
@@ -234,7 +456,7 @@ export default function About() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 overflow-hidden relative border-0 bg-white">
+            <Card className="group  hover:-translate-y-3 transition-all duration-500 overflow-hidden relative border-0 bg-white">
               <div className="relative h-48 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -266,7 +488,7 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 overflow-hidden relative border-0 bg-white">
+            <Card className="group  hover:-translate-y-3 transition-all duration-500 overflow-hidden relative border-0 bg-white">
               <div className="relative h-48 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -291,14 +513,14 @@ export default function About() {
                   and mutual success with our clients and team members.
                 </p>
                 <div className="mt-6 inline-flex items-center px-4 py-2 bg-marketing-red/5 rounded-full">
-                  <span className="text-marketing-red font-semibold text-sm">
+                  <span className="text-tech-blue font-semibold text-sm">
                     Core Value
                   </span>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 overflow-hidden relative border-0 bg-white">
+            <Card className="group  hover:-translate-y-3 transition-all duration-500 overflow-hidden relative border-0 bg-white">
               <div className="relative h-48 overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -323,7 +545,7 @@ export default function About() {
                   to every detail to ensure outstanding results.
                 </p>
                 <div className="mt-6 inline-flex items-center px-4 py-2 bg-success-green/5 rounded-full">
-                  <span className="text-success-green font-semibold text-sm">
+                  <span className="text-tech-blue font-semibold text-sm">
                     Core Value
                   </span>
                 </div>
