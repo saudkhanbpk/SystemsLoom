@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-tech-blue">Mar</span>
-              <span className="text-marketing-red">Techify</span>
+              <span className="text-tech-blue">Tech</span>
+              <span className="text-marketing-red">Consults</span>
             </div>
             <p className="text-gray-400 mb-4">
               Where Technology Meets Marketing Excellence
