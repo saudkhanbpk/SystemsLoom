@@ -1,10 +1,13 @@
 import React from 'react'
 import { ExternalLink } from 'lucide-react'
+import { motion } from 'framer-motion'
 import vulcan from "../../assets/vulcan.png"
 import kkra from "../../assets/kkra.png"
 import saloon from "../../assets/saloon.png"
 import bnbyond from "../../assets/bnbyond.png"
 import musafer from "../../assets/musafer.png"
+import movemuse from "../../assets/movemuse.png"
+
 // Dummy project data
 const projects = [
   {
@@ -42,6 +45,13 @@ const projects = [
     description: "A travel and tourism platform designed to simplify trip planning by offering curated travel packages, detailed itineraries, and an effortless booking experience for explorers in Pakistan.",
     image: musafer,
     website: "https://mosafir.pk/"
+  },
+   {
+    id: 5,
+    title: "MoveMuse",
+    description: "This website is designed to celebrate and support the global social dance community. It provides a platform for dancers to connect, share experiences, and grow together through the joy of dance.",
+    image: movemuse,
+    website: "https://move-muse12.netlify.app/"
   }
 ]
 

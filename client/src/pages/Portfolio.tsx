@@ -58,10 +58,55 @@ const projects = [
     tags: ["Flutter", "WebRTC", "Healthcare"],
     category: "Mobile Development",
     link: "#"
+  },
+  {
+    id: 7,
+    title: "Solar Panel Monitoring System",
+    description: "Real-time monitoring and analytics platform for solar panel performance with predictive maintenance",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    tags: ["React", "IoT", "Analytics", "Solar"],
+    category: "Solar Energy",
+    link: "#"
+  },
+  {
+    id: 8,
+    title: "Smart Solar Farm Management",
+    description: "Comprehensive management system for large-scale solar installations with AI-powered optimization",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    tags: ["Vue.js", "Python", "AI", "Energy Management"],
+    category: "Solar Energy",
+    link: "#"
+  },
+  {
+    id: 9,
+    title: "Residential Solar Calculator",
+    description: "Interactive web application for homeowners to calculate solar savings and ROI with financing options",
+    image: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    tags: ["React", "Calculator", "Solar", "Finance"],
+    category: "Solar Energy",
+    link: "#"
+  },
+  {
+    id: 10,
+    title: "Solar Installation Mobile App",
+    description: "Field service app for solar installers with project tracking, documentation, and customer communication",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    tags: ["React Native", "GPS", "Camera", "Field Service"],
+    category: "Solar Energy",
+    link: "#"
+  },
+  {
+    id: 11,
+    title: "Solar Energy Trading Platform",
+    description: "Blockchain-based platform for peer-to-peer solar energy trading with smart contracts",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    tags: ["Blockchain", "Smart Contracts", "Energy Trading", "Web3"],
+    category: "Solar Energy",
+    link: "#"
   }
 ];
 
-const categories = ["All", "Web Development", "Mobile Development", "AI Integration", "Marketing Tools"];
+const categories = ["All", "Web Development", "Mobile Development", "AI Integration", "Marketing Tools", "Solar Energy"];
 
 export default function Portfolio() {
   return (
@@ -242,27 +287,27 @@ export default function Portfolio() {
               What Our Clients Say
             </h2>
             <p className="text-xl text-light-slate max-w-3xl mx-auto">
-              Don't just take our word for it - hear from the businesses 
+              Don't just take our word for it - hear from the businesses
               we've helped transform.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="mb-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-shadow h-full">
+              <CardContent className="p-8 flex flex-col h-full">
+                <div className="mb-6 flex-grow">
                   <div className="flex text-accent-orange mb-4">
                     {[...Array(5)].map((_, i) => (
                       <span key={i} className="text-2xl">★</span>
                     ))}
                   </div>
                   <p className="text-light-slate italic">
-                    "TechConsults transformed our online presence completely. 
-                    The combination of their technical expertise and marketing 
+                    "TechConsults transformed our online presence completely.
+                    The combination of their technical expertise and marketing
                     strategy delivered results beyond our expectations."
                   </p>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center mt-auto">
                   <div className="w-12 h-12 bg-tech-blue rounded-full flex items-center justify-center text-white font-bold mr-4">
                     SM
                   </div>
@@ -274,21 +319,21 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="mb-6">
+            <Card className="hover:shadow-xl transition-shadow h-full">
+              <CardContent className="p-8 flex flex-col h-full">
+                <div className="mb-6 flex-grow">
                   <div className="flex text-accent-orange mb-4">
                     {[...Array(5)].map((_, i) => (
                       <span key={i} className="text-2xl">★</span>
                     ))}
                   </div>
                   <p className="text-light-slate italic">
-                    "The AI integration they implemented automated 70% of our 
-                    customer service inquiries while improving customer satisfaction. 
+                    "The AI integration they implemented automated 70% of our
+                    customer service inquiries while improving customer satisfaction.
                     Incredible results!"
                   </p>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center mt-auto">
                   <div className="w-12 h-12 bg-marketing-red rounded-full flex items-center justify-center text-white font-bold mr-4">
                     DJ
                   </div>
@@ -300,27 +345,105 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="mb-6">
+            <Card className="hover:shadow-xl transition-shadow h-full">
+              <CardContent className="p-8 flex flex-col h-full">
+                <div className="mb-6 flex-grow">
                   <div className="flex text-accent-orange mb-4">
                     {[...Array(5)].map((_, i) => (
                       <span key={i} className="text-2xl">★</span>
                     ))}
                   </div>
                   <p className="text-light-slate italic">
-                    "Working with TechConsults was a game-changer. Their mobile app 
-                    helped us reach a completely new market segment and doubled 
+                    "Working with TechConsults was a game-changer. Their mobile app
+                    helped us reach a completely new market segment and doubled
                     our customer base."
                   </p>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center mt-auto">
                   <div className="w-12 h-12 bg-success-green rounded-full flex items-center justify-center text-white font-bold mr-4">
                     EB
                   </div>
                   <div>
                     <div className="font-semibold text-dark-slate">Emily Brown</div>
                     <div className="text-light-slate text-sm">Founder, RetailPlus</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow h-full">
+              <CardContent className="p-8 flex flex-col h-full">
+                <div className="mb-6 flex-grow">
+                  <div className="flex text-accent-orange mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-2xl">★</span>
+                    ))}
+                  </div>
+                  <p className="text-light-slate italic">
+                    "The solar monitoring system TechConsults built for our
+                    residential solar installations increased our efficiency by 40%
+                    and helped us identify maintenance issues before they became costly problems."
+                  </p>
+                </div>
+                <div className="flex items-center mt-auto">
+                  <div className="w-12 h-12 bg-success-green rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    MR
+                  </div>
+                  <div>
+                    <div className="font-semibold text-dark-slate">Michael Rodriguez</div>
+                    <div className="text-light-slate text-sm">CEO, SolarTech Solutions</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow h-full">
+              <CardContent className="p-8 flex flex-col h-full">
+                <div className="mb-6 flex-grow">
+                  <div className="flex text-accent-orange mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-2xl">★</span>
+                    ))}
+                  </div>
+                  <p className="text-light-slate italic">
+                    "Their solar farm management platform revolutionized our operations.
+                    We now manage 50+ solar installations from a single dashboard with
+                    AI-powered optimization that increased our energy output by 25%."
+                  </p>
+                </div>
+                <div className="flex items-center mt-auto">
+                  <div className="w-12 h-12 bg-tech-blue rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    LT
+                  </div>
+                  <div>
+                    <div className="font-semibold text-dark-slate">Lisa Thompson</div>
+                    <div className="text-light-slate text-sm">Operations Director, GreenEnergy Corp</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow h-full">
+              <CardContent className="p-8 flex flex-col h-full">
+                <div className="mb-6 flex-grow">
+                  <div className="flex text-accent-orange mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-2xl">★</span>
+                    ))}
+                  </div>
+                  <p className="text-light-slate italic">
+                    "The solar calculator app they developed for our website converted
+                    60% more leads into customers. Homeowners love being able to see
+                    their potential savings instantly with accurate financing options."
+                  </p>
+                </div>
+                <div className="flex items-center mt-auto">
+                  <div className="w-12 h-12 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    JC
+                  </div>
+                  <div>
+                    <div className="font-semibold text-dark-slate">James Chen</div>
+                    <div className="text-light-slate text-sm">Marketing Manager, SunPower Homes</div>
                   </div>
                 </div>
               </CardContent>

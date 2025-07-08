@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Users, Target, Award, Clock } from "lucide-react";
+import { motion } from "framer-motion";
 import ceoImage from "@/assets/ceo.jpeg";
 import aamirbhai2 from "@/assets/aamirbhai2.png";
 import abbas1 from "@/assets/abbas1.jpg";
@@ -11,31 +12,117 @@ import amir1 from "../assets/amir1.jpg";
 import irtizaz from "../assets/irtizaz.jpg";
 import luqman from "../assets/luqman.jpg";
 import naem from "../assets/naem.jpg";
-import ishtiaq from "../assets/ishtiaq.jpg";
+import ishtiaq2 from "../assets/ishtiaq2.jpg";
 import afaq from "../assets/afaq.jpg";
 import imam from "../assets/imamhussain.jpg";
 import waheed2 from "../assets/waheed2.jpg";
 import zaid from "../assets/zaid.jpg";
 import adil from "../assets/adil.jpg";
 import zeeshan from "../assets/zeeshan.jpg";
+import team from "../assets/team.jpg";
 import OurProjects from "@/components/aboutus/OurProjects";
+
+// Animation variants for team cards
+const teamContainerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2
+    }
+  }
+}
+
+const teamCardVariants = {
+  hidden: (index: number) => ({
+    opacity: 0,
+    x: index % 2 === 0 ? -80 : 80,
+    y: 60,
+    scale: 0.8,
+    rotateY: index % 2 === 0 ? -10 : 10
+  }),
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    scale: 1,
+    rotateY: 0,
+    transition: {
+      type: "spring",
+      stiffness: 120,
+      damping: 12,
+      duration: 0.6
+    }
+  },
+  hover: {
+    y: -15,
+    scale: 1.03,
+    rotateY: 3,
+    boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 10
+    }
+  }
+}
+
+const teamImageVariants = {
+  hover: {
+    scale: 1.1,
+    transition: {
+      duration: 0.4,
+      ease: "easeOut"
+    }
+  }
+}
+
+const teamTextVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.3,
+      duration: 0.4
+    }
+  }
+}
 
 export default function About() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="md:py-20 py-10 bg-gradient-to-b from-bg-light to-white">
+      <section className="md:py-20 py-5 bg-gradient-to-b from-bg-light to-white">
+
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center md:mb-16">
+          
+        <div className="lg:flex items-center gap-10 "> 
+          
+            <div className="text-center md:mb-16">
             <h1 className="text-3xl md:text-6xl font-bold text-dark-slate md:mb-6">
               About TechConsults
             </h1>
-            <p className="text-xl text-light-slate max-w-3xl mx-auto">
-              Bridging the gap between technology and marketing to deliver
-              exceptional digital experiences that drive business growth.
+           
+            <p className="text-xl text-light-slate max-w-3xl mx-auto md:text-justify text-start md:mt-0 mt-4">
+              TechConsult is a software company, passionate about crafting innovative solutions that help businesses thrive in an ever-evolving technological landscape. Our team of expertise is dedicated to deliver high-quality, scalable and user-friendly solutions that meet unique needs of your business.<br></br>
+              You are launching startup or scaling an enterprise, TechConsult is here to boost your business online by serving you in web development, app development , Devops and graphic design. We provide end-to-end services that bring your ideas to life. We have a team focusing on innovative solutions, customized approach and commitment to quality.<br></br>
+              Bless us with the opportunity to serve and build the future together.
             </p>
+          
+          </div>
+           <div>
+            <img src={team} alt="" className="lg:w-[400px] lg:h-[400px] md:w-[700px] md:h-[400px] object-cover  rounded-2xl lg:mt-0 mt-5"/>
           </div>
         </div>
+        
+           
+        </div>
+       
+      </section>
+      <section>
+        
       </section>
 
       {/* Main Content */}
@@ -43,10 +130,10 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center md:mb-20">
             <div>
-              <h2 className="text-4xl font-bold text-dark-slate md:mb-6">
+              <h2 className="text-4xl font-bold text-dark-slate md:mb-6 md:text-start text-center">
                 Our Story
               </h2>
-              <p className="text-lg text-light-slate mb-6 leading-relaxed">
+              <p className="text-lg text-light-slate mb-6 leading-relaxed mt-3 md:mt-0 ">
                 TechConsults was born from a simple observation: the most
                 successful businesses today are those that seamlessly integrate
                 cutting-edge technology with strategic marketing expertise. Too
@@ -78,7 +165,7 @@ export default function About() {
                 className="rounded-2xl shadow-2xl w-full"
               /> */}
               <img
-                className="rounded-2xl shadow-2xl md:object-cover object-contain md:w-[500px] md:h-[400px] "
+                className="rounded-2xl shadow-2xl md:object-cover object-contain md:w-[600px] md:h-[400px] "
                 src={techcreator}
                 alt=""
               />
@@ -153,7 +240,13 @@ export default function About() {
           </div>
 
           {/* Team Section */}
-          <div className="text-center mb-16">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <h2 className="text-4xl font-bold text-dark-slate mb-6">
               Meet Our Team
             </h2>
@@ -161,7 +254,7 @@ export default function About() {
               Our diverse team of experts brings together years of experience in
               technology, marketing, and business strategy.
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-20 max-w-7xl mx-auto">
             <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-white overflow-hidden">
@@ -214,7 +307,7 @@ export default function About() {
                     Abbas Khan
                   </h3>
                   <p className="text-accent-purple font-semibold mb-3">
-                    HubSpot Specialist
+                   Product Manager
                   </p>
                 </div>
               </CardContent>
@@ -313,7 +406,7 @@ export default function About() {
               <CardContent className="p-0">
                 <div className="relative h-80 overflow-hidden">
                   <img
-                    src={ishtiaq}
+                    src={ishtiaq2}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
