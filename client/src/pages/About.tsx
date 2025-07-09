@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { Users, Target, Award, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import ceoImage from "@/assets/ceo.jpeg";
-import aamirbhai2 from "@/assets/aamirbhai2.png";
+import amirbhaireal from "@/assets/amirbhaireal.png";
 import abbas1 from "@/assets/abbas1.jpg";
 import techcreator from "../assets/techcreator.jpg";
 import hamdan2 from "../assets/hamdan2.jpg";
@@ -12,7 +12,7 @@ import amir1 from "../assets/amir1.jpg";
 import irtizaz from "../assets/irtizaz.jpg";
 import luqman from "../assets/luqman.jpg";
 import naem from "../assets/naem.jpg";
-import ishtiaq2 from "../assets/ishtiaq2.jpg";
+import myself from "../assets/myself.jpg";
 import afaq from "../assets/afaq.jpg";
 import imam from "../assets/imamhussain.jpg";
 import waheed2 from "../assets/waheed2.jpg";
@@ -280,8 +280,8 @@ export default function About() {
               <CardContent className="p-0">
                 <div className="relative h-80 overflow-hidden">
                   <img
-                    src={aamirbhai2}
-                    className="w-full h-full  object-center transition-transform duration-300 group-hover:scale-105"
+                    src={amirbhaireal}
+                    className="w-full h-full object-cover  transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6 text-center">
@@ -406,7 +406,7 @@ export default function About() {
               <CardContent className="p-0">
                 <div className="relative h-80 overflow-hidden">
                   <img
-                    src={ishtiaq2}
+                    src={myself}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
