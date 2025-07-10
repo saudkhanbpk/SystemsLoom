@@ -257,7 +257,7 @@ export default function Portfolio() {
 
   const filteredProjects =
     selectedCategory === "All"
-      ? projects
+      ? projects.filter((project) => project.category !== "Solar Energy")
       : projects.filter((project) => project.category === selectedCategory);
   return (
     <div className="pt-16">
