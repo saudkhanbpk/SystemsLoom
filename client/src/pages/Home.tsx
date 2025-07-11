@@ -1,15 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { 
-  Code, 
-  Smartphone, 
-  Brain, 
-  Megaphone, 
-  Rocket, 
-  Play, 
-  ChevronDown,
-  Check
+import {
+  Rocket,
+  ChevronDown
 } from "lucide-react";
 
 export default function Home() {
@@ -83,9 +77,13 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="group hover:shadow-xl transform hover:-translate-y-2 transition-all">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-tech-blue to-accent-purple rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Code className="h-8 w-8 text-white" />
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-xl overflow-hidden mb-6 group-hover:scale-110 transition-transform mx-auto">
+                  <img
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100"
+                    alt="Web Development"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-dark-slate mb-3">Web Development</h3>
                 <p className="text-light-slate">
@@ -95,9 +93,13 @@ export default function Home() {
             </Card>
             
             <Card className="group hover:shadow-xl transform hover:-translate-y-2 transition-all">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-marketing-red to-accent-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Smartphone className="h-8 w-8 text-white" />
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-xl overflow-hidden mb-6 group-hover:scale-110 transition-transform mx-auto">
+                  <img
+                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100"
+                    alt="Mobile Apps"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-dark-slate mb-3">Mobile Apps</h3>
                 <p className="text-light-slate">
@@ -107,9 +109,13 @@ export default function Home() {
             </Card>
             
             <Card className="group hover:shadow-xl transform hover:-translate-y-2 transition-all">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent-purple to-tech-blue rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Brain className="h-8 w-8 text-white" />
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-xl overflow-hidden mb-6 group-hover:scale-110 transition-transform mx-auto">
+                  <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100"
+                    alt="AI Integration"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-dark-slate mb-3">AI Integration</h3>
                 <p className="text-light-slate">
@@ -119,9 +125,13 @@ export default function Home() {
             </Card>
             
             <Card className="group hover:shadow-xl transform hover:-translate-y-2 transition-all">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-success-green to-accent-orange rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Megaphone className="h-8 w-8 text-white" />
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-xl overflow-hidden mb-6 group-hover:scale-110 transition-transform mx-auto">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100"
+                    alt="Digital Marketing"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-dark-slate mb-3">Digital Marketing</h3>
                 <p className="text-light-slate">
@@ -151,7 +161,7 @@ export default function Home() {
                 we help businesses bridge the gap between their technical capabilities and market success.
               </p>
               
-              <div className="grid grid-cols-2 gap-8 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 ">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-tech-blue mb-2">50+</div>
                   <div className="text-light-slate">Projects Completed</div>

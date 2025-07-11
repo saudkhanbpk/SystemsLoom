@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { Users, Target, Award, Clock } from "lucide-react";
+import { Users, Target, Award } from "lucide-react";
 import { motion } from "framer-motion";
 import ceoImage from "@/assets/ceo.jpeg";
 import amirbhaireal from "@/assets/amirbhaireal.png";
@@ -174,68 +174,84 @@ export default function About() {
 
           {/* Stats */}
           <div className="grid md:grid-cols-4 gap-8 md:mb-20">
-            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-blue-50/50 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/5 to-tech-blue/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-tech-blue to-tech-blue/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Target className="h-10 w-10 text-white" />
-                </div>
-                <div className="text-4xl font-bold text-tech-blue mb-3 group-hover:scale-105 transition-transform duration-300">
+            <Card className="group hover:-translate-y-2 transition-all duration-300 border-0 overflow-hidden relative">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+                  alt="Projects Completed"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-center text-white">
+                <div className="text-4xl font-bold mb-2 group-hover:scale-105 transition-transform duration-300">
                   50+
                 </div>
-                <div className="text-light-slate font-medium">
+                <div className="font-medium text-white/90">
                   Projects Completed
                 </div>
-                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-tech-blue to-tech-blue/50 rounded-full mx-auto"></div>
-              </CardContent>
+                <div className="mt-3 h-1 w-16 bg-gradient-to-r from-white to-white/50 rounded-full mx-auto"></div>
+              </div>
             </Card>
 
-            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-red-50/50 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-marketing-red/5 to-marketing-red/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-marketing-red to-marketing-red/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Users className="h-10 w-10 text-white" />
-                </div>
-                <div className="text-4xl font-bold text-tech-blue mb-3 group-hover:scale-105 transition-transform duration-300">
+            <Card className="group hover:-translate-y-2 transition-all duration-300 border-0 overflow-hidden relative">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+                  alt="Happy Clients"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-center text-white">
+                <div className="text-4xl font-bold mb-2 group-hover:scale-105 transition-transform duration-300">
                   30+
                 </div>
-                <div className="text-light-slate font-medium">
+                <div className="font-medium text-white/90">
                   Happy Clients
                 </div>
-                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-marketing-red to-marketing-red/50 rounded-full mx-auto"></div>
-              </CardContent>
+                <div className="mt-3 h-1 w-16 bg-gradient-to-r from-white to-white/50 rounded-full mx-auto"></div>
+              </div>
             </Card>
 
-            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50/50 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-purple/5 to-accent-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-accent-purple to-accent-purple/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Award className="h-10 w-10 text-white" />
-                </div>
-                <div className="text-4xl font-bold text-accent-purple mb-3 group-hover:scale-105 transition-transform duration-300">
+            <Card className="group hover:-translate-y-2 transition-all duration-300 border-0 overflow-hidden relative">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://media.istockphoto.com/id/2196870531/photo/making-decision-on-the-move.webp?a=1&b=1&s=612x612&w=0&k=20&c=rzFeaIUuiSoIUr2ihFB2qv26Fl3V3VkIMgygTSBbBo0="
+                  alt="Years Experience"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-center text-white">
+                <div className="text-4xl font-bold mb-2 group-hover:scale-105 transition-transform duration-300">
                   5+
                 </div>
-                <div className="text-light-slate font-medium">
+                <div className="font-medium text-white/90">
                   Years Experience
                 </div>
-                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-accent-purple to-accent-purple/50 rounded-full mx-auto"></div>
-              </CardContent>
+                <div className="mt-3 h-1 w-16 bg-gradient-to-r from-white to-white/50 rounded-full mx-auto"></div>
+              </div>
             </Card>
 
-            <Card className="group  hover:-translate-y-2 transition-all duration-300 border-0 bg-gradient-to-br from-white to-green-50/50 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-success-green/5 to-success-green/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-success-green to-success-green/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Clock className="h-10 w-10 text-white" />
-                </div>
-                <div className="text-4xl font-bold text-tech-blue mb-3 group-hover:scale-105 transition-transform duration-300">
+            <Card className="group hover:-translate-y-2 transition-all duration-300 border-0 overflow-hidden relative">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+                  alt="24/7 Support Available"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-center text-white">
+                <div className="text-4xl font-bold mb-2 group-hover:scale-105 transition-transform duration-300">
                   24/7
                 </div>
-                <div className="text-light-slate font-medium">
+                <div className="font-medium text-white/90">
                   Support Available
                 </div>
-                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-success-green to-success-green/50 rounded-full mx-auto"></div>
-              </CardContent>
+                <div className="mt-3 h-1 w-16 bg-gradient-to-r from-white to-white/50 rounded-full mx-auto"></div>
+              </div>
             </Card>
           </div>
 
