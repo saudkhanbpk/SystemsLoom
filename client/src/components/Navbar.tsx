@@ -3,6 +3,8 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import logo from "../assets/system2.png";
+// import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -22,12 +24,16 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="text-2xl font-bold">
-              <span className="text-tech-blue">Tech</span>
-              <span className="text-marketing-red">Consults</span>
-            </div>
+            <img
+              src={logo} // 🖼️ path to your logo inside /public
+              alt="SystemSloom Logo"
+              // width={150} // adjust size
+              // height={50}
+              // // priority
+              className="h-20 w-auto object-contain"
+            />
           </Link>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
@@ -35,11 +41,10 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-3 py-2 font-medium transition-colors ${
-                    location === item.href
+                  className={`px-3 py-2 font-medium transition-colors ${location === item.href
                       ? "text-tech-blue"
                       : "text-dark-slate hover:text-tech-blue"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </Link>
@@ -51,7 +56,7 @@ export default function Navbar() {
               </Link>
             </div>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -67,11 +72,10 @@ export default function Navbar() {
                       key={item.href}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className={`px-3 py-2 text-lg font-medium transition-colors ${
-                        location === item.href
+                      className={`px-3 py-2 text-lg font-medium transition-colors ${location === item.href
                           ? "text-tech-blue"
                           : "text-dark-slate hover:text-tech-blue"
-                      }`}
+                        }`}
                     >
                       {item.label}
                     </Link>

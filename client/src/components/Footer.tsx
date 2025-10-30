@@ -2,21 +2,25 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Linkedin, Twitter, Instagram, ArrowRight } from "lucide-react";
+import logo from "../assets/system2.png";
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div className="text-2xl font-bold mb-4">
-              <span className="text-tech-blue">Tech</span>
-              <span className="text-marketing-red">Consults</span>
+          <div className="flex flex-col items-start">
+            <div className="mb-4">
+              <img
+                src={logo} // make sure logo is imported or in /public
+                alt="SystemSloom Logo"
+                className="h-20 w-auto object-contain "
+              />
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 ml-[2px]">
               Where Technology Meets Marketing Excellence
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-3 ml-[2px]">
               <a
                 href="#"
                 className="text-gray-400 hover:text-tech-blue transition-colors"
@@ -40,7 +44,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400">
@@ -66,7 +70,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-400">
@@ -92,7 +96,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Newsletter</h4>
             <p className="text-gray-400 text-sm mb-4">
@@ -110,9 +114,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 TechConsults. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2025 SYSTEMSLOOM. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>

@@ -251,7 +251,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold text-dark-slate">Email</div>
-                      <div className="text-light-slate">contact@techcreator.co</div>
+                      <div className="text-light-slate">haykhan2000@outlook.com</div>
                     </div>
                   </div>
 
@@ -261,7 +261,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold text-dark-slate">Phone</div>
-                      <div className="text-light-slate">03119265290</div>
+                      <div className="text-light-slate">+44 7886 554875</div>
                     </div>
                   </div>
 
@@ -272,8 +272,8 @@ export default function Contact() {
                     <div>
                       <div className="font-semibold text-dark-slate">Office</div>
                       <div className="text-light-slate">
-                      Mardan road Near Muneer Hospital, <br />
-                      Swabi, Swabi, Pakistan
+                      28 Rooley crescent. BD61BU,  <br />
+                    Bradford, West Yorkshire
                         
                       </div>
                     </div>
